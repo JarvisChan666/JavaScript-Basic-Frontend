@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nameInput = prompt('input your name: ')
+        let ageInput = prompt('input your age: ')
+        let sexInput = prompt('input your sex: ')
+        
+        console.log("name:"+ nameInput)
+        console.log("age:"+ ageInput)
+        console.log("sex:"+ sexInput)
+        console.log("5 y later, you will be" + " " + String(Number(ageInput) + 5))
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Simple Table</title>  
+  <style>  
+    table {  
+      border-collapse: collapse;  
+      width: 100%;  
+    }  
+    th, td {  
+      border: 1px solid black;  
+      padding: 8px;  
+      text-align: left;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <h2>Simple Table</h2>  
+  <table id="myTable">  
+    <tr>  
+      <th>Name</th>  
+      <th>Age</th>  
+      <th>Sex</th>  
+    </tr>  
+  </table>  
+  
+  <script>  
+    // 获取用户输入的数据  
+    let nameInput = prompt('Input your name: ');  
+    let ageInput = prompt('Input your age: ');  
+    let sexInput = prompt('Input your sex: ');  
+  
+    // 创建表格的第二行，并将用户输入的数据填入相应的单元格中  
+    let table = document.getElementById('myTable');  
+    let row = table.insertRow(1);  
+    let cell1 = row.insertCell(0);  
+    let cell2 = row.insertCell(1);  
+    let cell3 = row.insertCell(2);  
+    cell1.innerHTML = nameInput;  
+    cell2.innerHTML = ageInput;  
+    cell3.innerHTML = sexInput;  
+  </script>  
+</body>  
+</html>

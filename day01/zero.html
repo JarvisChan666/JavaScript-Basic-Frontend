@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //input
+    // let num = prompt('please input a number')
+    // num = num < 10 ? '0' + num : num
+    // document.write(num)
+    // let oper = prompt('input:')
+    // let num1 = +prompt('num1:')
+    // let num2 = +prompt('num2')
+    // switch( oper ) {
+    //     case '+':
+    //         alert(`${num1+num2}`)
+    //         break
+    // }
+
+    // let num = +prompt('num:')
+    // for (let i = 1; i <=4; i++) {
+    //     num++
+    //     if (num == 5) {
+    //         break
+    //     }
+    // }
+    while (1) {  
+        let money = 100;  
+        let nomey = 100;  
+        let re = +prompt(`input   
+            1. save  
+            2. withdraw  
+            3. check  
+            4. exit  
+        `);  
+        if (re == 4) {  
+            break;  
+        }  
+        switch(re) {  
+            case '1':  
+                let money = +prompt('save money');  
+                break;  
+            case '2':  
+                let withd = +prompt('withdraw:');  
+                money = nomey - withd;  
+                break;  
+            case '3':  
+                alert(money);  
+                break;  
+        }  
+}
+</script>
+</html>

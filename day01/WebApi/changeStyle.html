@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <script>
+        const box = document.querySelector('.box');
+
+        box.style.width = '300px'
+        box.style.backgroundColor = 'yellow'
+        box.style.border = '5px solid lightpink'
+        box.style.borderTop = '5px solid red'
+        box.style.borderBottom = '5px solid green'
+        
+    </script>
+</body>
+</html>

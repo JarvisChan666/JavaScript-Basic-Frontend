@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" data-box="23">
+    <div data-id="1" data-sm="no">1</div>
+    <div data-id="2">2</div>
+    <div data-id="3">3</div>
+    <div data-id="4">4</div>
+    <div data-id="5">5</div>
+    <script>
+        const one = document.querySelector('div')
+        console.log(one.dataset.id)
+
+        const two = document.querySelector('input')
+        two.checked=true
+        console.log(two.dataset.box)
+    </script>
+</body>
+</html>

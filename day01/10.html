@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            height: 80px;
+            margin: 0 auto
+        }
+        th {
+            padding: 5px 20px
+        }
+        table, th, td {
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <!-- <script>
+        let num1 = +prompt('num1:')
+        let num2 = +prompt('num2:')
+        alert(`the sum is ${num1 + num2}`)
+        
+    </script> -->
+    
+    <h2>order</h2>
+   
+    <script>
+        let price = +prompt('please input price')
+        let number = +prompt('please input number')
+        let add = prompt('please input add')
+
+        let total = price * number
+
+        document.write(`
+        <table>
+        <tr>
+            <th>name</th>
+            <th>price</th>
+            <th>amount</th>
+            <th>name</th>
+            <th>name</th>
+            <tr>
+                <th>${price}</th>
+                <th>${number}</th>
+                <th>${total}</th>
+                <th>name</th>
+                <th>name</th>
+            </tr>
+        </tr>
+    </table>
+        `)
+    </script>
+</body>
+</html>

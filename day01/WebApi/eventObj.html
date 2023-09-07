@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <script>
+        const input = document.querySelector('input');
+        input.addEventListener('keyup', function(e) {
+           //事件对象 key  函数第一个参数是事件对象
+            if(e.key === 'Enter') {
+                console.log('Enter!!');
+            }
+        })
+    </script>
+</body>
+</html>
